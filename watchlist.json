@@ -1,0 +1,15 @@
+{
+  "_help": [
+    "Models to follow in every email. 'match' lists words that must all be in the model name,",
+    "plus the storage size (e.g. 256gb, 1tb). 'target' (optional) is the price you would buy at:",
+    "the email marks the model when the cheapest shop is at or below it.",
+    "Words are matched in lower case; 'iphone 16 256gb' does not include the 16 Pro or Pro Max."
+  ],
+  "watch": [
+    {"match": "iphone 16 pro max 256gb", "target": 29000000},
+    {"match": "iphone 16 128gb", "target": 19000000},
+    {"match": "galaxy s25 ultra 256gb", "target": 26000000},
+    {"match": "ipad air m2 11 128gb"},
+    {"match": "redmi note 14 256gb"}
+  ]
+}

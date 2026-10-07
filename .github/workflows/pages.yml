@@ -2,6 +2,11 @@ name: Deploy Pages
 on:
   push:
     branches: [main]
+  # Pushes made by a workflow do not start other workflows, so redeploy
+  # after each price run to show the new data.
+  workflow_run:
+    workflows: ["Send phone & tablet prices"]
+    types: [completed]
   workflow_dispatch:
 permissions:
   contents: read

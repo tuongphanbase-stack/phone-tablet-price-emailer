@@ -1,0 +1,103 @@
+name: Send phone & tablet prices
+
+on:
+  schedule:
+    # 07:43 and 19:43 Vietnam time (00:43 and 12:43 UTC).
+    - cron: "43 0,12 * * *"
+  workflow_dispatch:
+    inputs:
+      command:
+        description: "generate = normal run, check = only list what each shop returns"
+        default: generate
+        type: choice
+        options: [generate, check]
+      shops:
+        description: "Only these shop ids (comma separated), empty = all"
+        required: false
+        default: ""
+
+permissions:
+  contents: write   # to save the price history branch and the dashboard data
+
+concurrency:
+  group: phone-prices
+  cancel-in-progress: false
+
+jobs:
+  prices:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      # Without the Gmail secrets the Send step is skipped (with a warning)
+      # instead of failing the run every time.
+      HAS_GMAIL: ${{ secrets.GMAIL_ADDRESS != '' && secrets.GMAIL_APP_PASSWORD != '' }}
+      SHOPS: ${{ github.event.inputs.shops }}
+      TIMEZONE: Asia/Ho_Chi_Minh
+      SEND_ONLY_ON_CHANGE: "true"
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          # Headless Chromium for the shops marked "browser": true in shops.json.
+          python -m playwright install --with-deps chromium
+
+      - name: Run the tests
+        run: python -m unittest discover tests
+
+      - name: Check every shop
+        if: github.event.inputs.command == 'check'
+        run: python phone_tablet_price_emailer.py check
+
+      - name: Restore price history
+        if: github.event.inputs.command != 'check'
+        run: |
+          if git fetch -q origin phone-price-state; then
+            mkdir -p state
+            git show FETCH_HEAD:state/price_history.json > state/price_history.json 2>/dev/null || true
+            git show FETCH_HEAD:state/last_hash.txt > state/last_hash.txt 2>/dev/null || true
+          fi
+
+      - name: Generate email and dashboard data
+        if: github.event.inputs.command != 'check'
+        run: python phone_tablet_price_emailer.py generate
+
+      - name: Warn that the Gmail secrets are missing
+        if: github.event.inputs.command != 'check' && env.HAS_GMAIL != 'true'
+        run: echo "::warning::GMAIL_ADDRESS / GMAIL_APP_PASSWORD secrets are not set, so no email was sent. Add them in Settings -> Secrets and variables -> Actions."
+
+      - name: Send email
+        if: github.event.inputs.command != 'check' && env.HAS_GMAIL == 'true'
+        env:
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          PHONE_RECIPIENT: ${{ secrets.PHONE_RECIPIENT }}
+        run: python phone_tablet_price_emailer.py send
+
+      - name: Save price history
+        if: github.event.inputs.command != 'check'
+        run: |
+          [ -f state/price_history.json ] || exit 0
+          WT="$RUNNER_TEMP/state" && mkdir -p "$WT/state" && cp state/* "$WT/state/"
+          cd "$WT" && git init -q -b phone-price-state
+          git add state
+          git -c user.name="github-actions[bot]" -c user.email="41898283+github-actions[bot]@users.noreply.github.com" \
+            commit -q -m "Price history $(date -u +%F) [skip ci]"
+          # One commit that replaces the branch: the file already holds the whole history.
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" HEAD:phone-price-state
+
+      - name: Commit dashboard data
+        if: github.event.inputs.command != 'check'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add docs/latest.json docs/models.json docs/prices.csv 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Update phone prices [skip ci]"
+          git pull -q --rebase origin main && git push -q origin HEAD:main

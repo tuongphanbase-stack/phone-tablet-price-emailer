@@ -1,1 +1,53 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Phone & tablet prices — recovery</title><link rel="stylesheet" href="style.css"></head><body><main><div class="top"><div><div class="eyebrow">Recovered dashboard shell</div><h1>Phone & tablet prices</h1><p class="muted">Device price observations and latest-email dashboard metadata.</p></div><span class="status">RECONSTRUCTED</span></div><div class="grid"><div class="card"><b>STATUS</b><div class="value" id="state">—</div></div><div class="card"><b>ITEMS</b><div class="value" id="items">—</div></div><div class="card"><b>UPDATED</b><div class="value" id="updated">—</div></div></div><div class="notice"><b>Recovery note</b><p>This is a reconstructed Pages layer. Replace <code>docs/latest.json</code> with real exporter output when the original emailer is recovered.</p></div></main><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Giá điện thoại & máy tính bảng</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header class="top">
+    <div>
+      <div class="eyebrow">So sánh giá giữa các cửa hàng</div>
+      <h1>Giá điện thoại & máy tính bảng</h1>
+      <p class="muted" id="updated">Đang tải…</p>
+    </div>
+    <a class="button" href="prices.csv" download>Tải CSV</a>
+  </header>
+
+  <section class="grid" aria-label="Tóm tắt">
+    <div class="card"><b>SẢN PHẨM</b><div class="value" id="items">—</div></div>
+    <div class="card"><b>MODEL SO SÁNH ĐƯỢC</b><div class="value" id="models">—</div></div>
+    <div class="card"><b>CỬA HÀNG HOẠT ĐỘNG</b><div class="value" id="shopsOk">—</div></div>
+  </section>
+
+  <section class="tools">
+    <input id="q" type="search" placeholder="Tìm: iPhone 16 Pro Max, Galaxy S25, iPad Air…" aria-label="Tìm model">
+    <select id="cat" aria-label="Loại máy">
+      <option value="">Tất cả</option>
+      <option value="phone">Điện thoại</option>
+      <option value="tablet">Máy tính bảng</option>
+    </select>
+    <select id="sort" aria-label="Sắp xếp">
+      <option value="shops">Nhiều cửa hàng nhất</option>
+      <option value="spread">Chênh giá nhiều nhất</option>
+      <option value="low">Giá thấp → cao</option>
+      <option value="high">Giá cao → thấp</option>
+    </select>
+    <label class="check"><input id="multi" type="checkbox" checked> Chỉ model có ở 2+ shop</label>
+  </section>
+
+  <p class="muted small" id="count"></p>
+  <div id="list" class="list"></div>
+  <button id="more" class="more" type="button" hidden>Xem thêm</button>
+
+  <details class="shops">
+    <summary>Tình trạng các cửa hàng</summary>
+    <div id="shops"></div>
+  </details>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

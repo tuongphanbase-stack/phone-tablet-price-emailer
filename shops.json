@@ -1,0 +1,139 @@
+{
+  "_help": [
+    "Each shop lists one or more pages per category (phone, tablet).",
+    "To add a shop, copy an entry and change the name and URLs.",
+    "parser: 'auto' tries JSON-LD, then JSON embedded in the page, then product cards in the HTML.",
+    "        'tiki' uses Tiki's public JSON listing API.",
+    "browser: true loads the page in headless Chromium first (for shops that draw products with JavaScript).",
+    "selectors (optional): CSS selectors {card, name, price, link} when 'auto' picks the wrong things.",
+    "enabled: false keeps a shop in the list without fetching it."
+  ],
+  "shops": [
+    {
+      "id": "tgdd", "name": "Thế Giới Di Động", "parser": "auto",
+      "pages": {
+        "phone": ["https://www.thegioididong.com/dtdd"],
+        "tablet": ["https://www.thegioididong.com/may-tinh-bang"]
+      }
+    },
+    {
+      "id": "dmx", "name": "Điện Máy Xanh", "parser": "auto",
+      "pages": {
+        "phone": ["https://www.dienmayxanh.com/dien-thoai"],
+        "tablet": ["https://www.dienmayxanh.com/may-tinh-bang"]
+      }
+    },
+    {
+      "id": "cellphones", "name": "CellphoneS", "parser": "auto",
+      "pages": {
+        "phone": ["https://cellphones.com.vn/mobile.html"],
+        "tablet": ["https://cellphones.com.vn/tablet.html"]
+      }
+    },
+    {
+      "id": "fptshop", "name": "FPT Shop", "parser": "auto", "browser": true,
+      "pages": {
+        "phone": ["https://fptshop.com.vn/dien-thoai"],
+        "tablet": ["https://fptshop.com.vn/may-tinh-bang"]
+      }
+    },
+    {
+      "id": "hoangha", "name": "Hoàng Hà Mobile", "parser": "auto",
+      "pages": {
+        "phone": ["https://hoanghamobile.com/dien-thoai-di-dong"],
+        "tablet": ["https://hoanghamobile.com/may-tinh-bang"]
+      }
+    },
+    {
+      "id": "didongviet", "name": "Di Động Việt", "parser": "auto", "browser": true,
+      "pages": {
+        "phone": ["https://didongviet.vn/dien-thoai.html"],
+        "tablet": ["https://didongviet.vn/may-tinh-bang.html"]
+      }
+    },
+    {
+      "id": "viettelstore", "name": "Viettel Store", "parser": "auto",
+      "pages": {
+        "phone": ["https://viettelstore.vn/dien-thoai"],
+        "tablet": ["https://viettelstore.vn/may-tinh-bang"]
+      }
+    },
+    {
+      "id": "nguyenkim", "name": "Nguyễn Kim", "parser": "auto",
+      "pages": {
+        "phone": ["https://www.nguyenkim.com/dien-thoai-di-dong/"],
+        "tablet": ["https://www.nguyenkim.com/may-tinh-bang/"]
+      }
+    },
+    {
+      "id": "mediamart", "name": "MediaMart", "parser": "auto",
+      "pages": {
+        "phone": ["https://mediamart.vn/smartphones"],
+        "tablet": ["https://mediamart.vn/may-tinh-bang"]
+      }
+    },
+    {
+      "id": "24hstore", "name": "24hStore", "parser": "auto",
+      "pages": {
+        "phone": ["https://24hstore.vn/dien-thoai"],
+        "tablet": ["https://24hstore.vn/may-tinh-bang"]
+      }
+    },
+    {
+      "id": "shopdunk", "name": "ShopDunk", "parser": "auto",
+      "pages": {
+        "phone": ["https://shopdunk.com/iphone"],
+        "tablet": ["https://shopdunk.com/ipad"]
+      }
+    },
+    {
+      "id": "minhtuan", "name": "Minh Tuấn Mobile", "parser": "auto",
+      "pages": {
+        "phone": ["https://minhtuanmobile.com/dien-thoai/"],
+        "tablet": ["https://minhtuanmobile.com/may-tinh-bang/"]
+      }
+    },
+    {
+      "id": "hnam", "name": "Hnam Mobile", "parser": "auto",
+      "pages": {
+        "phone": ["https://www.hnammobile.com/dien-thoai"],
+        "tablet": ["https://www.hnammobile.com/may-tinh-bang"]
+      }
+    },
+    {
+      "id": "clickbuy", "name": "Clickbuy", "parser": "auto",
+      "pages": {
+        "phone": ["https://clickbuy.com.vn/dien-thoai"],
+        "tablet": ["https://clickbuy.com.vn/may-tinh-bang"]
+      }
+    },
+    {
+      "id": "bachlong", "name": "Bạch Long Mobile", "parser": "auto",
+      "pages": {
+        "phone": ["https://bachlongmobile.com/dien-thoai/"],
+        "tablet": ["https://bachlongmobile.com/may-tinh-bang/"]
+      }
+    },
+    {
+      "id": "didongthongminh", "name": "Di Động Thông Minh", "parser": "auto",
+      "pages": {
+        "phone": ["https://didongthongminh.vn/dien-thoai"],
+        "tablet": ["https://didongthongminh.vn/may-tinh-bang"]
+      }
+    },
+    {
+      "id": "phongvu", "name": "Phong Vũ", "parser": "auto", "browser": true,
+      "pages": {
+        "phone": ["https://phongvu.vn/c/dien-thoai"],
+        "tablet": ["https://phongvu.vn/c/may-tinh-bang"]
+      }
+    },
+    {
+      "id": "tiki", "name": "Tiki", "parser": "tiki",
+      "pages": {
+        "phone": ["https://tiki.vn/api/personalish/v1/blocks/listings?limit=40&category=1795&page=1&sort=top_seller"],
+        "tablet": ["https://tiki.vn/api/personalish/v1/blocks/listings?limit=40&category=1794&page=1&sort=top_seller"]
+      }
+    }
+  ]
+}

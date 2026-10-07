@@ -1,1 +1,42 @@
-*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:#f5f5f3;color:#1d1d1f}main{max-width:1120px;margin:auto;padding:48px 24px}.top{display:flex;justify-content:space-between;gap:20px;align-items:end}.eyebrow{font-size:12px;font-weight:700;color:#6b6b66;text-transform:uppercase;letter-spacing:.08em}h1{font-size:42px;letter-spacing:-.04em;margin:8px 0 10px}.muted{color:#74746e}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}.card{background:white;border:1px solid #deded8;border-radius:14px;padding:18px;min-height:130px}.card b{font-size:12px;color:#777}.value{font-size:25px;margin-top:14px;font-weight:700}.notice{margin-top:26px;padding:16px;border:1px solid #d7d7d0;background:#fffdf2;border-radius:12px}.status{display:inline-flex;padding:5px 9px;border:1px solid #ccc;border-radius:999px;font-size:11px}@media(max-width:700px){h1{font-size:31px}.grid{grid-template-columns:1fr}.top{display:block}}
+*{box-sizing:border-box}
+:root{--bg:#f5f5f3;--card:#fff;--ink:#1d1d1f;--muted:#6f6f69;--line:#e1e1da;--accent:#1a56db;--good:#0a7d32}
+@media (prefers-color-scheme:dark){:root{--bg:#141414;--card:#1e1e1e;--ink:#eee;--muted:#a3a39c;--line:#333;--accent:#7aa2ff;--good:#4ccf7d}}
+body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:var(--bg);color:var(--ink)}
+main{max-width:1120px;margin:auto;padding:40px 16px 60px}
+.top{display:flex;justify-content:space-between;gap:20px;align-items:end}
+.eyebrow{font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+h1{font-size:38px;letter-spacing:-.03em;margin:8px 0 6px}
+.muted{color:var(--muted)}.small{font-size:13px}
+.button{display:inline-block;padding:9px 14px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);text-decoration:none;font-weight:600;white-space:nowrap}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+.card b{font-size:11px;color:var(--muted);letter-spacing:.05em}
+.value{font-size:26px;margin-top:10px;font-weight:700}
+.tools{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0 8px;align-items:center}
+.tools input[type=search]{flex:1 1 260px;min-width:0;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);font:inherit}
+.tools select{padding:9px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);font:inherit}
+.check{font-size:14px;display:flex;gap:6px;align-items:center}
+.list{display:grid;gap:8px}
+.model{background:var(--card);border:1px solid var(--line);border-radius:12px}
+.model>button{all:unset;box-sizing:border-box;display:grid;grid-template-columns:1fr auto;gap:4px 12px;width:100%;padding:12px 14px;cursor:pointer}
+.model>button:focus-visible{outline:2px solid var(--accent);border-radius:12px}
+.model h3{margin:0;font-size:16px}
+.model .best{font-weight:700;color:var(--good);text-align:right;font-size:16px}
+.model .sub{font-size:12px;color:var(--muted)}
+.model .sub.r{text-align:right}
+.offers{padding:0 14px 14px;display:none}
+.model.open .offers{display:block}
+.offers table{width:100%;border-collapse:collapse;font-size:14px}
+.offers td{padding:7px 4px;border-top:1px solid var(--line)}
+.offers td.p{text-align:right;font-weight:600;white-space:nowrap}
+.offers a{color:var(--accent);text-decoration:none}
+.old{color:var(--muted);text-decoration:line-through;font-weight:400;font-size:12px;margin-right:6px}
+.chart{margin-top:10px}
+.chart svg{width:100%;height:120px;display:block}
+.more{display:block;margin:14px auto;padding:10px 18px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);font:inherit;cursor:pointer}
+.shops{margin-top:28px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.shops summary{cursor:pointer;font-weight:600}
+.shop-row{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-top:1px solid var(--line);font-size:14px}
+.bad{color:#c0392b}
+@media(max-width:700px){h1{font-size:28px}.grid{grid-template-columns:1fr}.top{display:block}.top .button{margin-top:10px}}
+.more[hidden]{display:none}
