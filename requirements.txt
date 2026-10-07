@@ -1,4 +1,4 @@
-requests>=2.31
-beautifulsoup4>=4.12
+requests>=2.34.2
+beautifulsoup4>=4.15.0
 # Optional: only shops marked "browser": true in shops.json need it.
-playwright>=1.44
+playwright>=1.63.0
