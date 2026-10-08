@@ -89,6 +89,7 @@ MediaMart,tablet,Apple iPad Air M4 13 256G Xám Grey 28 990 000 29 990 000 3 256
 Minh Tuấn Mobile,tablet,Apple iPad Air M4 2026 11 128GB,iPad Air M4 2026 11 inch Wifi 128GB,19190000,20990000,https://minhtuanmobile.com/ipad-air-m4/
 Minh Tuấn Mobile,tablet,Apple iPad Air M4 2026 11 128GB,iPad Air M4 2026 11 inch 5G 128GB,23390000,25190000,https://minhtuanmobile.com/ipad-air-m4-11-inch-5g/
 Minh Tuấn Mobile,tablet,Apple iPad Air M4 2026 11 1TB,iPad Air M4 2026 11 inch Wifi 1TB,36290000,37790000,https://minhtuanmobile.com/ipad-air-m4-11-inch-1tb/
+Minh Tuấn Mobile,tablet,Apple iPad Air M4 2026 11 256GB,iPad Air M4 2026 11 inch Wifi 256GB,21990000,23790000,https://minhtuanmobile.com/ipad-air-m4-11-inch-256gb/
 Minh Tuấn Mobile,tablet,Apple iPad Air M4 2026 11 256GB,iPad Air M4 2026 11 inch 5G 256GB,25490000,27990000,https://minhtuanmobile.com/ipad-air-m4-11-inch-5g-256gb/
 Minh Tuấn Mobile,tablet,Apple iPad Air M4 2026 11 512GB,iPad Air M4 2026 11 inch Wifi 512GB,27290000,29390000,https://minhtuanmobile.com/ipad-air-m4-11-inch-512gb/
 Minh Tuấn Mobile,tablet,Apple iPad Air M4 2026 11 512GB,iPad Air M4 2026 11 inch 5G 512GB,32290000,33590000,https://minhtuanmobile.com/ipad-air-m4-11-inch-5g-512gb/
@@ -97,7 +98,6 @@ Minh Tuấn Mobile,tablet,Apple iPad Air M4 2026 13 128GB,iPad Air M4 2026 13 in
 Minh Tuấn Mobile,tablet,Apple iPad Air M4 2026 13 256GB,iPad Air M4 2026 13 inch Wifi 256GB,27290000,29290000,https://minhtuanmobile.com/ipad-air-m4-13-inch-256gb/
 Minh Tuấn Mobile,tablet,Apple iPad Air M4 2026 13 256GB,iPad Air M4 2026 13 inch 5G 256GB,32290000,33490000,https://minhtuanmobile.com/ipad-air-m4-13-inch-5g-256gb/
 Minh Tuấn Mobile,tablet,Apple iPad Air M4 2026 13 512GB,iPad Air M4 2026 13 inch Wifi 512GB,33190000,34890000,https://minhtuanmobile.com/ipad-air-m4-13-inch-512gb/
-Minh Tuấn Mobile,tablet,Apple iPad Air M4 2026 13 512GB,iPad Air M4 2026 13 inch 5G 512GB,37790000,39090000,https://minhtuanmobile.com/ipad-air-m4-13-inch-5g-512gb/
 Di Động Thông Minh,tablet,Apple iPad Gen 10 256GB,iPad Gen 10 256GB Wifi Chính hãng,10990000,15990000,https://didongthongminh.vn/ipad-gen-10-256gb-wifi-chinh-hang
 Di Động Thông Minh,tablet,Apple iPad Gen 10 64GB,iPad Gen 10 64GB Wifi Chính hãng,8490000,12990000,https://didongthongminh.vn/ipad-gen-10-64gb-wifi-chinh-hang
 Di Động Thông Minh,tablet,Apple iPad Gen 9 2021 Apple Việt Nam 64GB,iPad Gen 9 2021 64GB 4G+Wifi Chính hãng Apple Việt Nam,9590000,13990000,https://didongthongminh.vn/ipad-gen-9-64gb
@@ -130,7 +130,7 @@ CellphoneS,tablet,Apple iPad Pro Chip M5 11 256GB,iPad Pro chip M5 11 inch Wifi 
 24hStore,tablet,Apple iPad Pro M5 11 2025 Mặt Kính,iPad Pro M5 11 inch 2025 Wifi (mặt kính...,64490000,69190000,https://24hstore.vn/ipad-pro-m5-2025/ipad-pro-m5-11-inch-2025-wifi-mat-kinh-nano-2tb-p11786
 Minh Tuấn Mobile,tablet,Apple iPad Pro M5 11 256GB,iPad Pro M5 11 inch Wifi 256GB,33790000,35590000,https://minhtuanmobile.com/ipad-pro-m5/
 ShopDunk,tablet,Apple iPad Pro M5 11 256GB,iPad Pro M5 11 inch Wi-Fi 256GB,33990000,34190000,https://shopdunk.com/ipad-pro-m5-11-inch-wi-fi
-Minh Tuấn Mobile,tablet,Apple iPad Pro M5 11 256GB,iPad Pro M5 11 inch 5G 256GB,39190000,41190000,https://minhtuanmobile.com/ipad-pro-m5-11-inch-5g-256gb/
+Minh Tuấn Mobile,tablet,Apple iPad Pro M5 11 256GB,iPad Pro M5 11 inch 5G 256GB,41190000,,https://minhtuanmobile.com/ipad-pro-m5-11-inch-5g-256gb/
 24hStore,tablet,Apple iPad Pro M5 13 2025 1TB,iPad Pro M5 13 inch 2025 Wifi 1TB | Chính...,57490000,61490000,https://24hstore.vn/ipad-pro-m5-2025/ipad-pro-m5-13-inch-2025-wifi-1tb-p11779
 24hStore,tablet,Apple iPad Pro M5 13 2025 2TB,iPad Pro M5 13 inch 2025 Wifi 2TB | Chính...,70490000,75490000,https://24hstore.vn/ipad-pro-m5-2025/ipad-pro-m5-13-inch-2025-wifi-2tb-p11780
 24hStore,tablet,Apple iPad Pro M5 13 2025 Cellular 1TB,iPad Pro M5 13 inch 2025 Wifi Cellular 1TB |...,63090000,63990000,https://24hstore.vn/ipad-pro-m5-2025/ipad-pro-m5-13-inch-2025-wifi-cellular-1tb-p11783
@@ -187,13 +187,12 @@ MediaMart,phone,Apple iPhone Air 256GB,Apple iPhone Air 256GB (Vàng Nhạt),229
 Minh Tuấn Mobile,phone,Apple iPhone Air 256GB,iPhone Air 256GB - Chính hãng VN,23190000,34990000,https://minhtuanmobile.com/iphone-air-256gb/
 Hoàng Hà Mobile,phone,Apple iPhone Air 512GB,iPhone Air 512GB - Chính hãng Apple Việt Nam,29136000,38490000,https://hoanghamobile.com/dien-thoai/iphone-air-512gb
 MediaMart,phone,Apple iPhone Air Nfc 22 990 000 32 990 000 30 256GB,Apple iPhone Air 256GB (Vàng Nhạt) NFC 256 GB 22.990.000 ₫ 32.990.000 ₫ -30%,22990000,32990000,https://mediamart.vn/smartphones/apple-iphone-air-256gb-vang-nhat
-24hStore,phone,Apple iPhone Duo 1TB,iPhone Duo 1TB | Chính hãng Việt Nam,84490000,,https://24hstore.vn/iphone-duo/iphone-duo-1tb-p12572
-24hStore,phone,Apple iPhone Duo 256GB,iPhone Duo 256GB | Chính hãng Việt Nam,64990000,,https://24hstore.vn/iphone-duo/iphone-duo-256gb-p12570
+24hStore,phone,Apple iPhone Duo 256GB,iPhone Duo 256GB | Chính hãng Việt Nam,64990000,,https://24hstore.vn/iPhoneDuo
 ShopDunk,phone,Apple iPhone Duo 256GB,iPhone Duo 256GB,64990000,,https://shopdunk.com/dien-thoai-iphone-duo-256gb
-24hStore,phone,Apple iPhone Duo 2TB,iPhone Duo 2TB | Chính hãng Việt Nam,103990000,,https://24hstore.vn/iphone-duo/iphone-duo-2tb-p12573
-24hStore,phone,Apple iPhone Duo 512GB,iPhone Duo 512GB | Chính hãng Việt Nam,71490000,,https://24hstore.vn/iphone-duo/iphone-duo-512gb-p12571
 CellphoneS,tablet,Giá RẺ,Máy tính bảng giá rẻ,1990000,,https://cellphones.com.vn/tablet.html
 24hStore,phone,Home Paylater Giảm Đến 500 000đ,Home PayLater giảm đến 500.000đ,500000,,https://24hstore.vn/khuyen-mai/home-paylater-tra-gop-tien-loi-n9495
+Minh Tuấn Mobile,phone,Honor 600S 128GB,Điện thoại HONOR 600S 5G 6GB 128GB,8990000,10490000,https://minhtuanmobile.com/dien-thoai-honor-600s-5g-6gb-128gb/
+CellphoneS,tablet,Honor Pad V9 256GB,HONOR Pad V9 Wifi 8GB 256GB,13690000,15990000,https://cellphones.com.vn/may-tinh-bang-honor-pad-v9-wifi.html
 Minh Tuấn Mobile,tablet,Honor Pad X8B 128GB,HONOR Pad X8b Wifi 6GB 128GB,6490000,7490000,https://minhtuanmobile.com/honor-pad-x8b-wifi-6gb-128gb/
 CellphoneS,tablet,Honor Pad X8B 128GB,Honor Pad X8b Wifi 6GB 128GB,7290000,7490000,https://cellphones.com.vn/may-tinh-bang-honor-pad-x8b.html
 Minh Tuấn Mobile,phone,Honor X5C Plus 128GB,Điện thoại HONOR X5c Plus 4GB 128GB,3690000,3990000,https://minhtuanmobile.com/honor-x5c-plus-4gb-128gb/
@@ -281,7 +280,7 @@ MediaMart,phone,Samsung Galaxy A16 A165F Xanh Nfc 2 390 000 5 390 000 50 128GB,�
 MediaMart,phone,Samsung Galaxy A16 A165F Xám Nfc 3 390 000 5 390 000 37 128GB,Điện thoại Samsung Galaxy A16 4G A165F (4+128G) Xám 4 GB NFC 128 GB 3.390.000 ₫ 5.390.000 ₫ -37%,3390000,5390000,https://mediamart.vn/smartphones/dien-thoai-samsung-galaxy-a16-4g-a165f-4-128g-xam
 MediaMart,phone,Samsung Galaxy A16 A165F Đen Nfc 3 390 000 5 390 000 37 128GB,Điện thoại Samsung Galaxy A16 4G A165F (4+128G) Đen 4 GB NFC 128 GB 3.390.000 ₫ 5.390.000 ₫ -37%,3390000,5390000,https://mediamart.vn/smartphones/dien-thoai-samsung-galaxy-a16-4g-a165f-4-128g-den
 MediaMart,phone,Samsung Galaxy A16 Nfc 3 390 000 5 390 000 37 128GB,Samsung Galaxy A16 4G (4+128G) 4 GB NFC 128 GB 3.390.000 ₫ 5.390.000 ₫ -37%,3390000,5390000,https://mediamart.vn/smartphones/dien-thoai-samsung-galaxy-a16-4g-a165f-4-128g-xanh
-Minh Tuấn Mobile,phone,Samsung Galaxy A17 128GB,Samsung Galaxy A17 5G 8GB 128GB,6390000,7090000,https://minhtuanmobile.com/samsung-galaxy-a17-5g-8gb-128gb/
+Minh Tuấn Mobile,phone,Samsung Galaxy A17 128GB,Samsung Galaxy A17 5G 8GB 128GB,6690000,7090000,https://minhtuanmobile.com/samsung-galaxy-a17-5g-8gb-128gb/
 MediaMart,phone,Samsung Galaxy A17 A175F,Samsung Galaxy A17 4G A175F (8+128G) Đen,5090000,,https://mediamart.vn/smartphones#28149
 MediaMart,phone,Samsung Galaxy A17 A175F Xanh DM,Samsung Galaxy A17 4G A175F (8+128G) Xanh DM,5090000,,https://mediamart.vn/smartphones#28146
 MediaMart,phone,Samsung Galaxy A17 A175F Xanh DM Nfc 5 090 000 6 390 000 20 128GB,Samsung Galaxy A17 4G A175F (8+128G) Xanh DM 8 GB NFC 128 GB 5.090.000 ₫ 6.390.000 ₫ -20%,5090000,6390000,https://mediamart.vn/samsung-galaxy-a17-4g-a175f-8-128g-xanh-dm
@@ -301,10 +300,11 @@ Minh Tuấn Mobile,phone,Samsung Galaxy S26 Plus 256GB,Samsung Galaxy S26 Plus 1
 24hStore,phone,Samsung Galaxy S26 Ultra 1TB,Samsung Galaxy S26 Ultra 1TB Chính Hãng,39090000,51990000,https://24hstore.vn/galaxy-s26-series/samsung-galaxy-s26-ultra-1tb-p12094
 Clickbuy,phone,Samsung Galaxy S26 Ultra 256GB,Samsung Galaxy S26 Ultra (5G) 12GB 256GB - 1 đổi 1 12 tháng,29790000,36990000,https://clickbuy.com.vn/samsung-galaxy-s26-ultra.html
 Minh Tuấn Mobile,phone,Samsung Galaxy S26 Ultra 256GB,Samsung Galaxy S26 Ultra 12GB 256GB,31490000,36990000,https://minhtuanmobile.com/samsung-galaxy-s26-ultra/
+CellphoneS,tablet,Samsung Galaxy Tab A11 64GB,Samsung Galaxy Tab A11 Wifi 4GB 64GB,3590000,4390000,https://cellphones.com.vn/may-tinh-bang-samsung-galaxy-tab-a11-wifi.html
 Minh Tuấn Mobile,tablet,Samsung Galaxy Tab A11 64GB,Samsung Galaxy Tab A11 Wifi 4GB 64GB,3690000,4390000,https://minhtuanmobile.com/samsung-galaxy-tab-a11-wifi-4gb-64gb/
-CellphoneS,tablet,Samsung Galaxy Tab A11 64GB,Samsung Galaxy Tab A11 Wifi 4GB 64GB,3790000,4390000,https://cellphones.com.vn/may-tinh-bang-samsung-galaxy-tab-a11-wifi.html
+CellphoneS,tablet,Samsung Galaxy Tab A11 64GB,Samsung Galaxy Tab A11 4GB 64GB,4590000,5490000,https://cellphones.com.vn/may-tinh-bang-samsung-galaxy-tab-a11-4gb-64gb.html
 Minh Tuấn Mobile,tablet,Samsung Galaxy Tab A11 64GB,Samsung Galaxy Tab A11 LTE 4GB 64GB,4690000,5490000,https://minhtuanmobile.com/samsung-galaxy-tab-a11-lte-4gb-64gb/
-Minh Tuấn Mobile,tablet,Samsung Galaxy Tab A11 Plus 128GB,Samsung Galaxy Tab A11 Plus 5G 6GB 128GB,7890000,8890000,https://minhtuanmobile.com/samsung-galaxy-tab-a11-plus-5g-6gb-128gb/
+Minh Tuấn Mobile,tablet,Samsung Galaxy Tab A11 Plus 128GB,Samsung Galaxy Tab A11 Plus 5G 6GB 128GB,7990000,8890000,https://minhtuanmobile.com/samsung-galaxy-tab-a11-plus-5g-6gb-128gb/
 Minh Tuấn Mobile,tablet,Samsung Galaxy Tab A11 Plus 256GB,Samsung Galaxy Tab A11 Plus Wifi 8GB 256GB,8290000,9390000,https://minhtuanmobile.com/samsung-galaxy-tab-a11-plus-wifi-8gb-256gb/
 MediaMart,tablet,Samsung Galaxy Tab A11 X133N,Samsung Galaxy Tab A11 Wifi (4GB+64G) X133N Xám,3690000,,https://mediamart.vn/may-tinh-bang#28600
 MediaMart,tablet,Samsung Galaxy Tab A11 X133N Xám 3 690 000 4 890 000 24 64GB,Samsung Galaxy Tab A11 Wifi (4GB+64G) X133N Xám 64 GB 4 GB 3.690.000 ₫ 4.890.000 ₫ -24%,3690000,4890000,https://mediamart.vn/may-tinh-bang/samsung-galaxy-tab-a11-wifi-4gb-64g-x133n-xam
@@ -318,7 +318,7 @@ Di Động Thông Minh,tablet,Samsung Galaxy Tab S9 FE 128GB,Samsung Galaxy Tab 
 Hoàng Hà Mobile,phone,Samsung Galaxy Z Fold7 256GB,Samsung Galaxy Z Fold7 5G 12GB/256GB,38028000,46990000,https://hoanghamobile.com/dien-thoai/samsung-galaxy-z-fold7
 24hStore,phone,Samsung Galaxy Z Fold7 Chính 256GB,Samsung Galaxy Z Fold7 5G 12GB/256GB Chính...,37290000,46990000,https://24hstore.vn/galaxy-z7-series/samsung-galaxy-z-fold7-5g-256gb-p11526
 24hStore,phone,Samsung Galaxy Z Fold7 Chính 512GB,Samsung Galaxy Z Fold7 5G 12GB/512GB Chính...,40090000,50990000,https://24hstore.vn/galaxy-z7-series/samsung-galaxy-z-fold7-5g-512gb-p11527
-24hStore,phone,Samsung Galaxy Z Fold8 Chính 256GB,Samsung Galaxy Z Fold8 5G 12GB/256GB Chính...,38390000,46990000,https://24hstore.vn/galaxy-z8-series/samsung-galaxy-z-fold8-5g-12gb-256gb-p12534
+24hStore,phone,Samsung Galaxy Z Fold8 Chính 256GB,Samsung Galaxy Z Fold8 5G 12GB/256GB Chính...,37590000,46990000,https://24hstore.vn/galaxy-z8-series/samsung-galaxy-z-fold8-5g-12gb-256gb-p12534
 24hStore,phone,Samsung Galaxy Z Fold8 Chính 512GB,Samsung Galaxy Z Fold8 5G 12GB/512GB Chính...,44490000,52990000,https://24hstore.vn/galaxy-z8-series/samsung-galaxy-z-fold8-5g-12gb-512gb-p12535
 24hStore,phone,Samsung Galaxy Z Fold8 Ultra 256GB,Samsung Galaxy Z Fold8 Ultra 5G 12GB/256GB...,44390000,52990000,https://24hstore.vn/galaxy-z8-series/samsung-galaxy-z-fold8-ultra-5g-12gb-256gb-p12536
 24hStore,phone,Samsung Galaxy Z Fold8 Ultra 512GB,Samsung Galaxy Z Fold8 Ultra 5G 12GB/512GB...,49490000,58990000,https://24hstore.vn/galaxy-z8-series/samsung-galaxy-z-fold8-ultra-5g-12gb-512gb-p12537
@@ -330,6 +330,8 @@ Di Động Thông Minh,tablet,Xiaomi Pad 6 Màn Hình 11 2 8K 128GB,"Xiaomi Pad 
 Di Động Thông Minh,tablet,Xiaomi Pad 6 Pro 256GB,Xiaomi Pad 6 Pro 8GB/256GB,8690000,11990000,https://didongthongminh.vn/xiaomi-pad-6-pro-8gb
 Di Động Thông Minh,tablet,Xiaomi Pad 6 Pro 256GB,Xiaomi Pad 6 Pro 12GB/256GB,9890000,12990000,https://didongthongminh.vn/xiaomi-pad-6-pro-12gb
 Di Động Thông Minh,tablet,Xiaomi Pad 6 Pro Giá RẺ 128GB,Xiaomi Pad 6 Pro 8GB/128GB giá rẻ,7690000,10990000,https://didongthongminh.vn/xiaomi-pad-6-pro
+CellphoneS,tablet,Xiaomi Pad 8 Pro 128GB,Xiaomi Pad 8 Pro 8GB 128GB,14990000,16990000,https://cellphones.com.vn/may-tinh-bang-xiaomi-pad-8-pro-8gb-128gb.html
+CellphoneS,tablet,Xiaomi Poco Pad M1 256GB,Xiaomi Poco Pad M1 Wifi 8GB 256GB,8290000,8990000,https://cellphones.com.vn/may-tinh-bang-xiaomi-poco-pad-m1.html
 CellphoneS,tablet,Xiaomi Poco Pad X1 512GB,Xiaomi Poco Pad X1 8GB 512GB,9990000,11290000,https://cellphones.com.vn/may-tinh-bang-xiaomi-poco-pad-x1.html
 Minh Tuấn Mobile,phone,Xiaomi Redmi 15 128GB,Điện thoại Xiaomi Redmi 15 5G 4GB 128GB,4490000,5690000,https://minhtuanmobile.com/xiaomi-redmi-15-5g-4gb-128gb/
 Minh Tuấn Mobile,phone,Xiaomi Redmi Note 15 128GB,Điện thoại Xiaomi Redmi Note 15 6GB 128GB,4990000,5990000,https://minhtuanmobile.com/xiaomi-redmi-note-15-6gb-128gb/
