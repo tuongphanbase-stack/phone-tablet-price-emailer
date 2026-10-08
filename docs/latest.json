@@ -1,6 +1,117 @@
 {
-  "repo": "phone-tablet-price-emailer",
-  "status": "reconstructed",
-  "item_count": null,
-  "updated_at": null
+ "repo": "phone-tablet-price-emailer",
+ "status": "ok",
+ "updated_at": "2026-10-08T01:08:43+00:00",
+ "item_count": 361,
+ "model_count": 204,
+ "shops": [
+  {
+   "id": "tgdd",
+   "name": "Thế Giới Di Động",
+   "count": 0,
+   "status": "failed"
+  },
+  {
+   "id": "dmx",
+   "name": "Điện Máy Xanh",
+   "count": 0,
+   "status": "failed"
+  },
+  {
+   "id": "cellphones",
+   "name": "CellphoneS",
+   "count": 17,
+   "status": "partial"
+  },
+  {
+   "id": "fptshop",
+   "name": "FPT Shop",
+   "count": 0,
+   "status": "failed"
+  },
+  {
+   "id": "hoangha",
+   "name": "Hoàng Hà Mobile",
+   "count": 24,
+   "status": "partial"
+  },
+  {
+   "id": "didongviet",
+   "name": "Di Động Việt",
+   "count": 1,
+   "status": "partial"
+  },
+  {
+   "id": "viettelstore",
+   "name": "Viettel Store",
+   "count": 0,
+   "status": "partial"
+  },
+  {
+   "id": "nguyenkim",
+   "name": "Nguyễn Kim",
+   "count": 0,
+   "status": "failed"
+  },
+  {
+   "id": "mediamart",
+   "name": "MediaMart",
+   "count": 152,
+   "status": "ok"
+  },
+  {
+   "id": "24hstore",
+   "name": "24hStore",
+   "count": 58,
+   "status": "ok"
+  },
+  {
+   "id": "shopdunk",
+   "name": "ShopDunk",
+   "count": 8,
+   "status": "ok"
+  },
+  {
+   "id": "minhtuan",
+   "name": "Minh Tuấn Mobile",
+   "count": 77,
+   "status": "ok"
+  },
+  {
+   "id": "hnam",
+   "name": "Hnam Mobile",
+   "count": 0,
+   "status": "failed"
+  },
+  {
+   "id": "clickbuy",
+   "name": "Clickbuy",
+   "count": 15,
+   "status": "partial"
+  },
+  {
+   "id": "bachlong",
+   "name": "Bạch Long Mobile",
+   "count": 0,
+   "status": "failed"
+  },
+  {
+   "id": "didongthongminh",
+   "name": "Di Động Thông Minh",
+   "count": 9,
+   "status": "ok"
+  },
+  {
+   "id": "phongvu",
+   "name": "Phong Vũ",
+   "count": 0,
+   "status": "failed"
+  },
+  {
+   "id": "tiki",
+   "name": "Tiki",
+   "count": 0,
+   "status": "failed"
+  }
+ ]
 }
