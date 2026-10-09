@@ -50,7 +50,7 @@ def dashboard_url():
 
 def run_collect():
     shops = collect.load_shops(os.environ.get("SHOPS_FILE", "shops.json"), os.environ.get("SHOPS"))
-    snap = collect.collect(shops, workers=int(os.environ.get("FETCH_WORKERS", "8")))
+    snap = collect.collect(shops, workers=int(os.environ.get("FETCH_WORKERS") or "8"))
     return snap, collect.group_by_model(snap["items"])
 
 
