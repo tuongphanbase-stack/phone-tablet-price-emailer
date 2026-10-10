@@ -75,6 +75,24 @@ class Parsers(unittest.TestCase):
         self.assertEqual(got["Apple iPhone 16 Pro Max 256GB"].old_price, 34990000)
         self.assertEqual(len(got), 2)
 
+    def test_promo_banners_dropped(self):
+        # 24hStore puts shop and bank offers in its product grid; they are not phones or tablets.
+        got = self.names(parse.parse_auto(fixture("promos.html"), "https://24hstore.vn/dien-thoai"))
+        self.assertFalse([n for n in got if "đến" in n.split("21.890.000")[0] or "Voucher" in n])
+        self.assertEqual(got["iPhone 17 Pro 1TB | Chính hãng Việt Nam"].price, 41490000)
+        self.assertEqual(got["Nokia HMD 105 4G"].price, 690000)  # cheap, but a real phone
+        # A real product whose card text runs on into its promotion is kept.
+        self.assertTrue(any(n.startswith("iPad Air M4 11 inch") for n in got))
+        self.assertEqual(len(got), 3)
+
+    def test_promo_names(self):
+        for name in ["Apple Watch giảm đến 500.000đ", "Home PayLater giảm đến 500.000đ", "TPBank EVO giảm đến 500.000đ",
+                     "VIB giảm đến 1.500.000đ", "VPBank hoàn đến 800.000đ", "Tặng Voucher 4.999.000đ",
+                     "Hoàn tiền 10% khi mở thẻ", "Ưu đãi sinh viên", "Khuyến mãi tháng 10"]:
+            self.assertFalse(parse.looks_like_device(name), name)
+        for name in ["Xiaomi Pad 6 Pro 8GB/128GB giá rẻ", "Nokia 105 4G Pro", "iPad Pro M5 11 inch 2025 Wifi 2TB"]:
+            self.assertTrue(parse.looks_like_device(name), name)
+
     def test_garbage_does_not_crash(self):
         self.assertEqual(parse.parse_auto("<html><p>Hết hàng</p>", "https://x.vn"), [])
         self.assertEqual(parse.parse_tiki("not json", "https://x.vn"), [])

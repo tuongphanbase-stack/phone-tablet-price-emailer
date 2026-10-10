@@ -43,6 +43,15 @@ NOT_DEVICE_RE = re.compile(
     r"gói cước|trả góp|cũ|like new|đã kích hoạt)\b",
     re.IGNORECASE,
 )
+# Shop banners and bank offers that sit in the product grid with an amount,
+# e.g. "MacBook giảm đến 1.000.000đ", "VPBank hoàn đến 800.000đ", "Tặng
+# Voucher 4.999.000đ". Only the text before the first price is checked: a
+# real product's card text can run on into its promotions ("... 21.890.000 đ
+# Học sinh giảm thêm đến 1 triệu"). "Trả góp" is already in NOT_DEVICE_RE.
+PROMO_RE = re.compile(
+    r"giảm đến|hoàn đến|hoàn tiền|voucher|paylater|ưu đãi|khuyến mãi",
+    re.IGNORECASE,
+)
 
 
 @dataclass
@@ -83,7 +92,9 @@ def clean_name(name):
 
 
 def looks_like_device(name):
-    return bool(name) and len(name) >= 4 and not NOT_DEVICE_RE.search(name)
+    if not name or len(name) < 4 or NOT_DEVICE_RE.search(name):
+        return False
+    return not PROMO_RE.search(PRICE_TEXT_RE.split(name, 1)[0])
 
 
 # ---------------------------------------------------------------- JSON-LD
