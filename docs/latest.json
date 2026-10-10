@@ -1,9 +1,9 @@
 {
  "repo": "phone-tablet-price-emailer",
  "status": "ok",
- "updated_at": "2026-10-09T13:07:34+00:00",
- "item_count": 437,
- "model_count": 213,
+ "updated_at": "2026-10-10T01:08:58+00:00",
+ "item_count": 360,
+ "model_count": 203,
  "shops": [
   {
    "id": "tgdd",
@@ -20,7 +20,7 @@
   {
    "id": "cellphones",
    "name": "CellphoneS",
-   "count": 21,
+   "count": 20,
    "status": "partial"
   },
   {
@@ -32,14 +32,14 @@
   {
    "id": "hoangha",
    "name": "Hoàng Hà Mobile",
-   "count": 96,
+   "count": 24,
    "status": "partial"
   },
   {
    "id": "didongviet",
    "name": "Di Động Việt",
-   "count": 5,
-   "status": "ok"
+   "count": 1,
+   "status": "partial"
   },
   {
    "id": "viettelstore",
